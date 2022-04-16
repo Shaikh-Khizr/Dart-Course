@@ -62,4 +62,92 @@ void main() {
   // print(cost.runtimeType);
   // print(gender.runtimeType);
   // print(is_full.runtimeType);
+
+  // # Operators
+  // ## Arithmetic Operators
+  // var a = 10;
+  // var b = 20;
+  // var c = 50;
+  // var d = 3;
+
+  // print(a + b);
+  // print(c - a);
+  // print(a * b);
+  // print(a / d);
+  // print(a ~/ d); // ~/ this will return jsut integer value not decimal
+  // print(a % d);
+
+  // ## Prefix and Postfix Increment and Decrement Operators
+
+  // ++ This operator will increase one
+  // var i = 3;
+  // print(i);
+  // print(++i); // it will first evaluate addition then print
+  // print(i++); // it will first print then evaluate addition
+  // print(i);
+
+  // -- This operator will decrease one
+  // var j = 3;
+  // print(j);
+  // print(--j); // it will first evaluate subtraction then print
+  // print(j--); // it will first print then evaluate subtraction
+  // print(j);
+
+  // var i = 3;
+  // print(++i); // it will first evaluate addition then print
+  // print(i++); // it will first print then evaluate addition
+  // print(--i); // it will first evaluate subtraction then print
+  // print(i--); // it will first print then evaluate subtraction
+
+  // ## Equality and Relational Operators
+  // var a = 100;
+  // var b = 200;
+  // print(a == b); // if a's value is equal to b's value: no, so it will return false
+  // print(a != b); // if a's value is not equal to b's value: yes, so it will return true
+  // print(a > b); // if a's value is greater than b's value: no, so it will return false
+  // print(a < b); // if a's value is less than b's value: yes, so it will return true
+  // print(a >= b); // if a's value is greater than or equal to b's value: no, so it will return false
+  // print(a <= b); // if a's value is less than or equal to b's value: yes, so it will return true
+
+  // ## Logical Operators
+  /*
+      true && true = true
+      true && false = false
+      false && true = false
+      false && false = false
+      
+      true || true = true
+      true || false = true
+      false || true = true
+      false || false = false
+  */
+
+  // var a = 100;
+  // var b = 100;
+  // var c = 200;
+  // var d = 200;
+
+  // print((a == b) && (c == d));
+  // print((a == b) && (c == a));
+  // print((a == c) && (c == d));
+  // print((a == c) && (c == a));
+
+  // print((a == b) || (c == d));
+  // print((a == b) || (c == a));
+  // print((a == c) || (c == d));
+  // print((a == c) || (c == a));
+
+  // ## Type Test Operators
+  // var name = "Khizr";
+  // var number = 10;
+  // print(name is String); // If name's datatype is String: yes, so it will return true
+  // print(number is int); // If number's datatype is int: yes, so it will return true
+  // print(number is! int); // If number's datatype is not int: no, so it will return false
+
+  // ## Assignment Operators
+  // var n = 10; // "=" is an assignment operator
+  // n += 5; // "+=" ( n = n + 5) is an assignment operator, it will increase the value by 5
+  // n -= 5; // "-=" ( n = n - 5) is an assignment operator, it will decrease the value by 5
+  // n *= 5; // "*=" ( n = n * 5) is an assignment operator, it will multiply the value by 5
+  // print(n);
 }
