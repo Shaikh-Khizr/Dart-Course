@@ -150,4 +150,19 @@ void main() {
   // n -= 5; // "-=" ( n = n - 5) is an assignment operator, it will decrease the value by 5
   // n *= 5; // "*=" ( n = n * 5) is an assignment operator, it will multiply the value by 5
   // print(n);
+
+  // # Conditional Expression
+
+  // ## First Way
+  // var is_login = false;
+  // condition ? expr1 : expr2 --> If condition is true then run expression1, if not then run expression 2
+  // var user = is_login ? 'Khizr' : 'Guest';
+  // print(user);
+
+  // ## Second Way
+  // var name = 'khizr';
+  // var name = null;
+  // var user = name ?? 'Guest'; // If name is not null then user is equal to name, if null then user is equal to Guest
+  // print(user);
+  
 }
