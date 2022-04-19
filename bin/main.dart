@@ -20,7 +20,7 @@ void main() {
 
   // # Built-in-Datatypes
   // ## int
-  int cart_item = 10;
+  // int cart_item = 10;
   // print(cart_item);
 
   // ## double
@@ -164,5 +164,111 @@ void main() {
   // var name = null;
   // var user = name ?? 'Guest'; // If name is not null then user is equal to name, if null then user is equal to Guest
   // print(user);
-  
+
+  // # String
+  // String name1 = 'Khizr';
+  // print(name1);
+  // print(name1.runtimeType);
+
+  // You can also write it in double quotes ""
+  // String name2 = "Abdul Azeem";
+  // print(name2);
+
+  // You can also write it using var in single quotes ''
+  // var name3 = 'Asif';
+  // print(name3);
+  // print(name3.runtimeType);
+
+  // Or in double quotes too ""
+  // var name4 = "Asad";
+  // print(name4);
+  // print(name4.runtimeType);
+
+  // ## You can't write single quote in single quotes
+  // or double quote in double quotes
+
+  // If you want so you have 2 options
+  // 1. escape it by slash (\)
+  // var s1 = 'It\'s a language';
+  // var s1 = "It\"s a language";
+  // print(s1);
+
+  // 2. write the sentence in double quote or in single quote
+  // var s2 = "It's a language";
+  // var s2 = 'It"s a language';
+  // print(s2);
+
+  // ## You can write multi-line string in triple single or double qoute
+//   var mstr = '''This is
+// Multi-line
+// String''';
+
+//   var mstr = """This is
+// Multi-line
+// String""";
+//   print(mstr);
+
+  // ## Expression Inside String
+  // var name = 'Khizr';
+  // You can print name inside string with just $, or ${}
+  // print('$name');
+  // print('${name}');
+  // print('My name is ${name}');
+  // print('My name is name');
+
+  // But If you want to use any funcition with it
+  // So you can only use it with ${}
+  // print('My name is ${name.toUpperCase()}');
+
+  // You can also write something after using variable in string
+  // print('My name is $name and I am good boy');
+
+  // You can use multiple variables too in string
+  // var city = "Pune";
+  // print('My name is $name and I am from $city');
+
+  // ## String Concatenation
+  // print('Hello Dart');
+  // You can concat 2 strings or 2 string variables like this
+  // print('Hello' + 'Aquib');
+  // print('Hello' + '' + 'Numan');
+  // var s1 = 'Hello';
+  // var s2 = 'Khizr';
+  // print(s1 + s2);
+  // print(s1 + ' ' + s2);
+  // You can write it this way too
+  // print(s1 + ' My name is ' + s2);
+
+  // ## Raw String
+  // var s = 'In a raw string, not even \n get a special treatment.';
+  // var s = r'In a raw string, not even \n get a special treatment.';
+  // print(s);
+
+  // ## String Properties & Methods
+  // var name = 'Khizr';
+  // var name = 'KHIZR';
+
+  // Properties
+  // print(name.length); // .length will return the length of the given string
+  // print(name.isEmpty); // .isEmpty: return true if str is empty or false if not
+  // print(name.isNotEmpty); // .isNotEmpty: return true if str is not empty or false if yes
+
+  // Methods
+  // print(name.toUpperCase()); // return the name string in upper case letters
+  // print(name.toLowerCase()); // return the name string in lower case letters
+  // print(name.contains('i')); // return true if name contains 'i' or false if not
+  // print(name.padLeft(10)); // Add 10 spaces to the left
+  // print(name.padRight(10)); // Add 10 spaces to the right
+
+  // var str1 = '    Hello     ';
+  // print(str1);
+  // print(str1.trim()); // .trim() will reomve all whitespaces from left and right of the string
+  // print(str1.trimLeft()); // .trimLeft() will reomve all whitespaces from left of the string
+  // print(str1.trimRight()); // .trimRight() will reomve all whitespaces from right of the string
+
+  // var str2 = 'Hello Dart';
+  // var str3 = 'Hello&Dart';
+  // print(str2.split(' ')); // will split the string at the matches of ' ' (pattern) and return a list of substrings 
+  // print(str3.split('&')); // will split the string at the matches of '&' (pattern) and return a list of substrings 
+
 }
