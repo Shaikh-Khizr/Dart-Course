@@ -268,7 +268,122 @@ void main() {
 
   // var str2 = 'Hello Dart';
   // var str3 = 'Hello&Dart';
-  // print(str2.split(' ')); // will split the string at the matches of ' ' (pattern) and return a list of substrings 
-  // print(str3.split('&')); // will split the string at the matches of '&' (pattern) and return a list of substrings 
+  // print(str2.split(' ')); // will split the string at the matches of ' ' (pattern) and return a list of substrings
+  // print(str3.split('&')); // will split the string at the matches of '&' (pattern) and return a list of substrings
 
+  // # List
+  // ## Fixed Length List
+  /*
+  var lst= new Lisr(3); this is depracated in dart 2.15 so please use this to create fixed size list
+  var lst = List.filled(3, null);
+  null is the value that will be in the list. you can give [] and use .add(val) to add in the list
+
+  var lst=List.filled(3, []);
+  lst[0].add("harry");
+  print(lst)
+  it will add harry in the empty list
+  */
+  // var lst = new List<dynamic>.filled(3, null);
+  // You can assign value to list lik this
+  // lst[0] = "Khizr";
+  // lst[1] = "Aquib";
+  // lst[2] = 100;
+  // print(lst);
+  // You can access list items like this too
+  // print(lst[0]);
+  // print(lst[1]);
+  // print(lst[2]);
+  // print(lst.runtimeType); // Type of list is DYNAMIC
+
+  // You can create String list like this
+  // List<String> lst = List.filled(3, '');
+  // lst[0] = "Khizr";
+  // lst[1] = "Aquib";
+  // lst[2] = "Numan";
+  // print(lst);
+  // print(lst[0]);
+  // print(lst[1]);
+  // print(lst[2]);
+  // print(lst.runtimeType); // Type of list is String
+
+  // ## Growable List
+  // var lst = ['Khizr', 'Aquib', 'Numan'];
+  // print(lst);
+  // print(lst[0]);
+  // print(lst[1]);
+  // print(lst[2]);
+  // print(lst.runtimeType); // Type of list is String
+
+  // var lst1 = [1, 2, 3, 4, 5];
+  // print(lst1);
+  // print(lst1.runtimeType);
+
+  // var lst2 = [1, 2, 3, 4, 'Hello'];
+  // print(lst2);
+  // print(lst2.runtimeType);
+
+  // You can strict growable list like this
+  // var lst3 = <int>[1, 2, 3, 4];
+  // print(lst3);
+  // print(lst3.runtimeType);
+
+  // ## Access List Elements
+  // var students = <String>["Zain", "Bilal", "Zarrrar"];
+  // print(students);
+  // print(students[0]);
+  // print(students[1]);
+  // print(students[2]);
+  // print(students.runtimeType);
+
+  // ## Insert List into Another List
+  // - Spread Operator
+  // var women = ["Ayeza", "Aiman", "Urwa"];
+  // var men = ["Danish", "Muneeb"];
+
+  // var gabbarwithmen = ["Gabbar", ...men]; // ...<list-name> will copy all the list items to this list
+  // print(gabbarwithmen);
+
+  // var people = ["Gabbar", ...women, ...men];
+  // print(people);
+
+  // ## Empty List and add() Method
+  // - List() constructor
+
+  // 1. First Way
+  // var students = new List.empty(growable: true);
+  // students[0] = "Hamza"; // You can't insert element like this
+  // students.add("Hamza");
+  // students.add("Abuzar");
+  // students.add("Zoheb");
+  // print(students);
+  // print(students.runtimeType);
+
+  // 2. Second Way
+  // var employee = [];
+  // employee.add("Zain");
+  // employee.add("Bilal");
+  // print(employee);
+  // print(employee.runtimeType);
+
+  // ## List Properties & Methods ( SOME )
+  // - Properties ( SOME )
+  // var studnets = ["Zarrar", "Hamza", "Abuzar"];
+  // print(studnets);
+  // print(studnets.length); // return length of 'students' list
+  // print(studnets.isEmpty); // .isEmpty: return true if list is empty or false if not
+  // print(studnets.isNotEmpty); // .isNotEmpty: return true if list is not empty or false if yes
+  // print(studnets.reversed); // return reversed list
+  // print(studnets.first); // return first element
+  // print(studnets.last); // return last element
+
+  // - Methods ( SOME )
+  // studnets.remove("Zarrar"); // remove element by value
+  // print(studnets);
+  
+  // studnets.removeAt(1); // remove element by index
+  // print(studnets);
+
+  // studnets.removeLast(); // remove last element
+  // print(studnets);
+  
 }
