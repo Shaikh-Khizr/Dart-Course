@@ -474,18 +474,18 @@ void main() {
 
   // ## Empty Map
   // Map() Constructor
-//   var address = Map();
-//   print(address);
-//   print(address.runtimeType); // retrun <dynamic, dynamic>, because you can specify keys and values whatever you want
+  // var address = Map();
+  // print(address);
+  // print(address.runtimeType); // retrun <dynamic, dynamic>, because you can specify keys and values whatever you want
 
-//   Map<String, String> address1 = Map();
-//   print(address1);
-//   print(address1.runtimeType); // retrun <String, String>, because you specified keys and values to String
+  // Map<String, String> address1 = Map();
+  // print(address1);
+  // print(address1.runtimeType); // retrun <String, String>, because you specified keys and values to String
 
   // Another way of creating Map
-//   var address2 = {};
-//   print(address2);
-//   print(address2.runtimeType);
+  // var address2 = {};
+  // print(address2);
+  // print(address2.runtimeType);
 
   // ## Add item to Map
   // var address3 = {};
@@ -504,14 +504,57 @@ void main() {
   // print(address4['state']);
 
   // ## Map Properties and Methods ( SOME )
-  var address5 = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
-  print(address5);
+  // var address5 = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
+  // print(address5);
 
-  print(address5.length); // return length of 'address5' map
-  print(address5.isEmpty); // .isEmpty: return true if address5 is empty or false if not
-  print(address5.isNotEmpty); // .isNotEmpty: return true if address5 is not empty or false if yes
-  print(address5.keys); // return keys of address5 map
-  print(address5.values); // return values of address5 map
-  print(address5.containsKey('name')); // return true if address5 contains name as key
-  print(address5.containsValue('Pune')); // return true if address5 contains Pune as value
+  // print(address5.length); // return length of 'address5' map
+  // print(address5.isEmpty); // .isEmpty: return true if address5 is empty or false if not
+  // print(address5.isNotEmpty); // .isNotEmpty: return true if address5 is not empty or false if yes
+  // print(address5.keys); // return keys of address5 map
+  // print(address5.values); // return values of address5 map
+  // print(address5.containsKey('name')); // return true if address5 contains name as key
+  // print(address5.containsValue('Pune')); // return true if address5 contains Pune as value
+
+  // # Control Flow Statements
+  // ## if Statement
+  // if (condition returns true) {
+  //   then execute this code
+  // } else {
+  //   if not then this
+  // }
+
+  // var is_login = true;
+  // if (is_login) {
+  //   print("Welcom Khizr");
+  // }
+
+  // var a = 10;
+  // if (a == 10) {
+  //   print('Value of a is $a');
+  // }
+
+  // ## if else Statement
+  // var is_login = true;
+  // if (is_login) {
+  //   print("Welcom Khizr");
+  // } else {
+  //   print("Welcom Guest");
+  // }
+
+  // var a = 10;
+  // if (a == 10) {
+  //   print('Value of a is $a');
+  // } else {
+  //   print("Invalid Value");
+  // }
+
+  // ## if... else if... else... Statement
+  var a = 50;
+  if (a == 10) {
+    print('Value of a is $a');
+  } else if (a == 20) {
+    print('Value is $a');
+  } else {
+    print("Invalid Value");
+  }
 }
