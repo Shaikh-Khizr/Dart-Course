@@ -549,12 +549,90 @@ void main() {
   // }
 
   // ## if... else if... else... Statement
-  var a = 50;
-  if (a == 10) {
-    print('Value of a is $a');
-  } else if (a == 20) {
-    print('Value is $a');
-  } else {
-    print("Invalid Value");
-  }
+  // var a = 50;
+  // if (a == 10) {
+  //   print('Value of a is $a');
+  // } else if (a == 20) {
+  //   print('Value is $a');
+  // } else {
+  //   print("Invalid Value");
+  // }
+
+  // # Loops
+  // ## For Loop
+  // for (initial_value; condition; increment/decrement){
+  //   this code will execute if condition is true
+  // }
+  // var students = ['Zain', 'Bilal', 'Zarrar'];
+  // for (var i = 0; i < students.length; i++) {
+  //   print(students[i]);
+  // }
+
+  // ## While Loop
+  // var n = 1;
+  // while (n <= 5) {
+  //   print("Number $n");
+  //   n++;
+  // }
+
+  // var students = ['Zain', 'Bilal', 'Zarrar'];
+  // var i = 0;
+  // while (i < students.length) {
+  //   print(students[i]);
+  //   i++;
+  // }
+
+  // var is_fetching = true;
+  // while (is_fetching) {
+  //   print("Data Fetching.....");
+  // }
+
+  // ## Do-While Loop - always runs once
+  // var n = 1;
+  // do {
+  //   print("Number $n");
+  //   n++;
+  // } while (n <= 3);
+
+  // var is_fetching = true;
+  // do {
+  //   print("Data Fetching.....");
+  // } while (is_fetching);
+
+  // ## for-in Loop with List
+  // var students = ['Dehya', 'Yahya', 'Naeem'];
+  // for (var student in students) {
+  //   print(student);
+  // }
+
+  // ## for-in Loop with Set
+  // var students = {'Khizr', 'Musayyab', 'Dehya'};
+  // for (var student in students) {
+  //   print(student);
+  // }
+
+  // ## for-in Loop with Map
+  // var address = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
+  // for (var key in address.keys) {
+  //   print(key);
+  // }
+  // for (var value in address.values) {
+  //   print(value);
+  // }
+
+  // ## forEach Loop with List
+  // var students = ['Dehya', 'Yahya', 'Naeem'];
+  // students.forEach((value) => print(value));
+
+  // If you want to access index too, so you need to convert list to map
+  var students = ['Dehya', 'Yahya', 'Naeem'];
+  students.asMap().forEach((i, value) => print("$i = $value"));
+
+  // ## forEach Loop with Set
+  // var students = {'Khizr', 'Musayyab', 'Dehya'};
+  // students.forEach((value) => print(value));
+
+  // ## forEach Loop with Map
+  // var address = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
+  // address.forEach((key, value) => print("$key = $value"));
 }
