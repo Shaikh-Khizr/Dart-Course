@@ -647,16 +647,44 @@ void main() {
   //   print("Data Fetching.... $n");
   // }
 
-  var is_fetching = true;
-  var n = 0;
-  while (is_fetching) {
-    n++;
-    if (n == 10) {
+  // var is_fetching = true;
+  // var n = 0;
+  // while (is_fetching) {
+  //   n++;
+  //   if (n == 10) {
+  //     break;
+  //   }
+  //   if (n == 5) {
+  //     continue;
+  //   }
+  //   print("Data Fetching.... $n");
+  // }
+
+  // # Switch Case Statement
+  // switch (value) {
+  //   case 'if value matches to this case':
+  //     then this code will be executed
+  //     break;
+  //   default:
+  //     if value not mathces to any case
+  //     then default code will be executed
+  // }
+  
+  var command = 'PENDING';
+  switch (command) {
+    case 'CLOSED':
+      print('Complaint Ticket Closed');
       break;
-    }
-    if (n == 5) {
-      continue;
-    }
-    print("Data Fetching.... $n");
+    case 'PENDING':
+      print('Complaint Ticket Pending');
+      break;
+    case 'DENIED':
+      print('Complaint Ticket Denied');
+      break;
+    case 'OPEN':
+      print('Complaint Ticket Open');
+      break;
+    default:
+      print('InValid Complaint Ticket');
   }
 }
