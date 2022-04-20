@@ -379,11 +379,68 @@ void main() {
   // - Methods ( SOME )
   // studnets.remove("Zarrar"); // remove element by value
   // print(studnets);
-  
+
   // studnets.removeAt(1); // remove element by index
   // print(studnets);
 
   // studnets.removeLast(); // remove last element
   // print(studnets);
-  
+
+  // # Set
+  // - An Unordered collection of unique items can’t contain duplicate values
+  // var st1 = {"Zain", "Bilal", "Zarrar"};
+  // print(st1);
+  // print(st1.runtimeType); // Return String, because contains only strings
+
+  // var st2 = {1, 2, "Zain", "Bilal", "Zarrar"};
+  // print(st2);
+  // print(st2.runtimeType); // Return Object, because contains strings and ints
+
+  // You can create strict set like this
+  // var st3 = <String>{"Zain", "Bilal", "Zarrar"};
+  // print(st3);
+  // print(st3.runtimeType);
+
+  // Another way of creating set
+  // Set st4 = {"Zain", "Bilal", "Zarrar"};
+  // print(st4);
+  // print(st4.runtimeType); // Return dynamic, because datatype not specified
+
+  // Set<String> st5 = {"Zain", "Bilal", "Zarrar"};
+  // print(st5);
+  // print(st5.runtimeType); // Return String, because datatype is specified
+
+  // ## Empty Set
+  // - For creating empty set, specifying the datatype is necessary
+  // var st6 = <String>{};
+  // print(st6);
+  // print(st6.runtimeType);
+
+  // - If you will not specify the datatype, it will be declared "MAP" not set
+  // var st7 = {};
+  // print(st7);
+  // print(st7.runtimeType);
+
+  // Another ways of creating empty set
+  // Set<String> st8 = Set();
+  // // Set st8 = Set(); // Will create a set of dynamic type
+  // print(st8);
+  // print(st8.runtimeType);
+
+  // Set<String> st9 = {};
+  // print(st9);
+  // print(st9.runtimeType);
+
+  // ## Add item to Empty Set
+  // var p = <String>{};
+  // p.add("JavaScript");
+  // p.add("Dart");
+  // print(p);
+  // print(p.runtimeType);
+
+  // ## No duplicate value will be considered, it will be eliminated
+  var x = {1, 2, 3, 1, 2, 1, 1};
+  print(x);
+  print(x.runtimeType);
+
 }
