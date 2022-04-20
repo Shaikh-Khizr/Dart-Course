@@ -625,8 +625,8 @@ void main() {
   // students.forEach((value) => print(value));
 
   // If you want to access index too, so you need to convert list to map
-  var students = ['Dehya', 'Yahya', 'Naeem'];
-  students.asMap().forEach((i, value) => print("$i = $value"));
+  // var students = ['Dehya', 'Yahya', 'Naeem'];
+  // students.asMap().forEach((i, value) => print("$i = $value"));
 
   // ## forEach Loop with Set
   // var students = {'Khizr', 'Musayyab', 'Dehya'};
@@ -635,4 +635,28 @@ void main() {
   // ## forEach Loop with Map
   // var address = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
   // address.forEach((key, value) => print("$key = $value"));
+
+  // # Braek an Continue
+  // var is_fetching = true;
+  // var n = 0;
+  // while (is_fetching) {
+  //   n++;
+  //   if (n == 10) {
+  //     break;
+  //   }
+  //   print("Data Fetching.... $n");
+  // }
+
+  var is_fetching = true;
+  var n = 0;
+  while (is_fetching) {
+    n++;
+    if (n == 10) {
+      break;
+    }
+    if (n == 5) {
+      continue;
+    }
+    print("Data Fetching.... $n");
+  }
 }
