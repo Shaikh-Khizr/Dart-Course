@@ -439,8 +439,79 @@ void main() {
   // print(p.runtimeType);
 
   // ## No duplicate value will be considered, it will be eliminated
-  var x = {1, 2, 3, 1, 2, 1, 1};
-  print(x);
-  print(x.runtimeType);
+  // var x = {1, 2, 3, 1, 2, 1, 1};
+  // print(x);
+  // print(x.runtimeType);
 
+  // # Map
+  // ## Map Literal
+  // var address = {
+  //   'name': 'Khizr',
+  //   'city': 'Pune',
+  //   'state': 'Maharashtra'
+  // };
+
+  // You can strict the data-type of Map like this
+  // <data-type of key, data-type of value>
+  // Map<String, String> address = {
+  //   'name': 'Khizr',
+  //   'city': 'Pune',
+  //   'state': 'Maharashtra'
+  // };
+
+  // print(address);
+  // print(address.runtimeType);
+
+  // Keys are int and values are String
+  // var product = {10: 'Mobile', 20: 'Laptop', 30: 'Keyboard'};
+  // print(product);
+  // print(product.runtimeType); // return <int, String>, because keys are int and values are String
+
+  // Keys are String and values are int
+  // var fees = {'Hamza': 2000, 'Abuzar': 5000, 'Zoheb': 10000};
+  // print(fees);
+  // print(fees.runtimeType); // return <String, int>, because keys are String and values are int
+
+  // ## Empty Map
+  // Map() Constructor
+//   var address = Map();
+//   print(address);
+//   print(address.runtimeType); // retrun <dynamic, dynamic>, because you can specify keys and values whatever you want
+
+//   Map<String, String> address1 = Map();
+//   print(address1);
+//   print(address1.runtimeType); // retrun <String, String>, because you specified keys and values to String
+
+  // Another way of creating Map
+//   var address2 = {};
+//   print(address2);
+//   print(address2.runtimeType);
+
+  // ## Add item to Map
+  // var address3 = {};
+  // address3['key'] = 'value'; --> like this you can add values to the map
+  // address3['name'] = 'Zarrar';
+  // address3['city'] = 'Pune';
+  // print(address3);
+  // print(address3.runtimeType);
+
+  // ## Access Map Elemnets
+  // var address4 = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
+  // print(address4);
+  // print(address4['key']); --> this will return the value of this key
+  // print(address4['name']);
+  // print(address4['city']);
+  // print(address4['state']);
+
+  // ## Map Properties and Methods ( SOME )
+  var address5 = {'name': 'Khizr', 'city': 'Pune', 'state': 'Maharashtra'};
+  print(address5);
+
+  print(address5.length); // return length of 'address5' map
+  print(address5.isEmpty); // .isEmpty: return true if address5 is empty or false if not
+  print(address5.isNotEmpty); // .isNotEmpty: return true if address5 is not empty or false if yes
+  print(address5.keys); // return keys of address5 map
+  print(address5.values); // return values of address5 map
+  print(address5.containsKey('name')); // return true if address5 contains name as key
+  print(address5.containsValue('Pune')); // return true if address5 contains Pune as value
 }
