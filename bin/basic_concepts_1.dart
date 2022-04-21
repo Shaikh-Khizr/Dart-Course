@@ -790,7 +790,7 @@ void main() {
 
   // addfun("Khizr", b: 10, a: 20);
 
-  // ## Anonymous Function - Also called lamba function
+  // ## Anonymous Function - Also called lambda function
   /* Syntax
   () {
     statements
@@ -801,7 +801,7 @@ void main() {
   //   print(value);
   // });
 
-  // ## Arrow Function - Also called lamba function
+  // ## Arrow Function - Also called lambda function
   /* Syntax
   () => statement (it can take only one statement)
   */
