@@ -669,22 +669,143 @@ void main() {
   //     if value not mathces to any case
   //     then default code will be executed
   // }
-  
-  var command = 'PENDING';
-  switch (command) {
-    case 'CLOSED':
-      print('Complaint Ticket Closed');
-      break;
-    case 'PENDING':
-      print('Complaint Ticket Pending');
-      break;
-    case 'DENIED':
-      print('Complaint Ticket Denied');
-      break;
-    case 'OPEN':
-      print('Complaint Ticket Open');
-      break;
-    default:
-      print('InValid Complaint Ticket');
+
+  // var command = 'PENDING';
+  // switch (command) {
+  //   case 'CLOSED':
+  //     print('Complaint Ticket Closed');
+  //     break;
+  //   case 'PENDING':
+  //     print('Complaint Ticket Pending');
+  //     break;
+  //   case 'DENIED':
+  //     print('Complaint Ticket Denied');
+  //     break;
+  //   case 'OPEN':
+  //     print('Complaint Ticket Open');
+  //     break;
+  //   default:
+  //     print('InValid Complaint Ticket');
+  // }
+
+  // # Function
+  /* 
+  ## Defining a Function
+  returnType function_name(datatype parameter) {
+    statements
+    return statement
   }
+
+  ## Calling a Function
+  function_name();
+  */
+
+  // ## Function without Parameter
+  // - If you not provide returnType it will take default return type
+  // myfun() {
+  //   print("Hello Dart");
+  // }
+
+  // myfun();
+
+  // int addfun() {
+  //   int a = 10;
+  //   int b = 20;
+  //   return a + b;
+  // }
+
+  // var total = addfun();
+  // print(total);
+
+  // ## Function with Parameter
+  // ### Positional Parameter
+  // int addfun(a, b) {
+  //   return a + b;
+  // }
+
+  // var total = addfun(10, 20);
+  // print(total);
+
+  // int addfun(int a, int b) {
+  //   return a + b;
+  // }
+
+  // var total = addfun(10, 20);
+  // print(total);
+
+  // ### Optional Positional Parameter
+  // String introfun(String name, String city) {
+  //   return 'I am $name from $city';
+  // }
+
+  // var info = introfun('Zain', 'Pune');
+  // print(info);
+
+  // - If you need to make parameter optional cover it with []
+  // - There is some update in sdk so you need to pass ? after datatype
+  // String introfun(String name, [String? city]) {
+  //   return 'I am $name from $city';
+  // }
+
+  // String introfun(String name, [String? city]) {
+  //   if (city != null) {
+  //     return 'I am $name from $city';
+  //   }
+  //   return 'I am $name';
+  // }
+
+  // var info = introfun('Zain');
+  // print(info);
+
+  // ### Default Value Parameter
+  // - If you provide param value then it will not take default param value
+  // String introfun(String name, [String city = 'Mumbai']) {
+  //   return 'I am $name from $city';
+  // }
+
+  // var info = introfun('Zain', 'Pune');
+  // print(info);
+
+  // ### Named Parameter
+  // addfun({a, b}) {
+  //   print('A = $a');
+  //   print('B = $b');
+  // }
+
+  // addfun(b: 10, a: 20);
+
+  // addfun({int? a, int? b}) {
+  //   print('A = $a');
+  //   print('B = $b');
+  // }
+
+  // addfun(b: 10, a: 20);
+
+  // Combination of named and positional
+  // addfun(x, {int? a, int? b}) {
+  //   print('A = $a');
+  //   print('B = $b');
+  //   print('X = $x');
+  // }
+
+  // addfun("Khizr", b: 10, a: 20);
+
+  // ## Anonymous Function - Also called lamba function
+  /* Syntax
+  () {
+    statements
+  };
+  */
+  // var students = ['Zain', 'Bilal', 'Zarrar'];
+  // students.forEach((value) {
+  //   print(value);
+  // });
+
+  // ## Arrow Function - Also called lamba function
+  /* Syntax
+  () => statement (it can take only one statement)
+  */
+  var students = ['Zain', 'Bilal', 'Zarrar'];
+  students.forEach((value) => print(value));
+  
 }
